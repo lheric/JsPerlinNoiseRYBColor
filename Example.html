@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script src="JsPerlinNoiseRYBColor.js"></script>
+<script language="JavaScript">
+
+function generate_new()
+{
+	// image width & height
+	var width = 200;
+	var height = 100;
+
+	// read parameters
+	var density = document.getElementById("density").value;;
+	var red = document.getElementById("red").value;
+	var yellow = document.getElementById("yellow").value;
+	var blue = document.getElementById("blue").value;
+
+	// create generator & generate texture
+	var generator = new PerlinNoiseGenerator();	
+	var final_result = generator.generateTexture(red, yellow, blue, width, height, density);
+
+	// show the texture
+	document.getElementById("result_canvas").src = 'data:image/png;'+final_result;
+}
+
+</script>
+Red Component:
+<br>
+<input id="red" placeholder="Red Component" value="1.0"></input>
+<br>
+Yellow Component:
+<br>
+<input id="yellow" placeholder="Yello Component" value="1.0"></input>
+<br>
+Blue Component:
+<br>
+<input id="blue" placeholder="Blue Component" value="1.0"></input>
+<br>
+Density:
+<br>
+<input id="density" placeholder="Density" value="12.0"></input>
+<br>
+<button onclick="generate_new();">Generate a New Image</button>
+<br>
+<img id="result_canvas" src="">
+</body>
+</html>
