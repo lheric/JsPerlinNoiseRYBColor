@@ -30,4 +30,4 @@ For a complete example, please refer to **Example.html**
 Screenshot
 ==========
 
-![Screenshot](https://raw.githubusercontent.com/lheric/JsPerlinNoiseRYBColor/master/screenshot.png)
+<img src="https://raw.githubusercontent.com/lheric/JsPerlinNoiseRYBColor/master/screenshot.png" align="left" width="300" >
