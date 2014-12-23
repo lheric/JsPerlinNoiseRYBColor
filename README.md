@@ -3,7 +3,8 @@ JsPerlinNoiseRYBColor
 
 Javascript version of Perlin Noise generator
 
-Example Usage:
+Example Usage
+=============
 
 ```javascript
 // image width & height
@@ -26,3 +27,7 @@ document.getElementById("result_canvas").src = 'data:image/png;'+final_result;
 
 For a complete example, please refer to **Example.html**
 
+Screenshot
+==========
+
+![Screenshot](https://raw.githubusercontent.com/lheric/JsPerlinNoiseRYBColor/master/screenshot.png)
